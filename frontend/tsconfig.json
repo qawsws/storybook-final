@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                  // 최신 문법 사용 가능
+    "module": "CommonJS",                // ✅ ts-node로 실행 시 안정적인 모듈 방식
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "scripts/crawl-storyberries.ts"  ],
+  "exclude": ["node_modules"]
+}
